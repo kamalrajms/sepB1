@@ -1,0 +1,19 @@
+01/09/2026
+
+## Props
+
+    Props is nothing but drilling data from parent component to 
+    child component.
+
+            declearing Props
+            DeStructuring props
+
+## conditional rendering
+
+    conditional rendering is means showing  or hiding part of UI 
+    based on some condition (state,props...)
+
+                ternary operator  {condition ? true:flase}
+                Logical operator  && || !
+
+## list Rendering 

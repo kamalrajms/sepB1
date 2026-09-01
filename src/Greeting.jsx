@@ -1,10 +1,12 @@
 import React from "react";
 import Hello from "./Hello";
 
-export default function Greeting() {
+export default function Greeting(props) {
   return (
     <div>
-      <h2>React intro</h2>
+      <h2>
+        React intro--{props.firstName}---{props.age}
+      </h2>
       <Hello />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
