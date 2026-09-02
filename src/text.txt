@@ -1,3 +1,38 @@
+31/08/2026
+
+## react intro
+
+    What is React?
+  
+
+  
+    1) React is a JavaScript library (not a framework) developed by Facebook (Meta) for building user interfaces (UIs), especially Single Page Applications (SPAs).
+
+    2) It helps developers build reusable UI components that update efficiently when data changes.
+
+    Instead of reloading a whole webpage when something changes, React updates only the parts of the UI that need to change.
+
+    -------
+    Why do we need React?
+
+	It makes UI development faster, cleaner, and more efficient.
+
+	Provides a better user experience with smooth updates without page reloads.
+
+
+    ## must need to install node.js
+ 
+## procedure to initiate project
+
+    step 1 : npm create vite@latest [project_name]
+    step 2 : select react
+    step 3 : select javascript+ react compailer
+    step 4 : npm install                // install node module packages
+    step 5 : npm run dev 
+
+    if you want to re-run your project mean 
+        npm run dev
+
 01/09/2026
 
 ## Props
@@ -16,4 +51,27 @@
                 ternary operator  {condition ? true:flase}
                 Logical operator  && || !
 
+2/9/2026
+
 ## list Rendering 
+
+    Rendering multiple item dynamically using .map()
+
+    arr=[1,2,3,4]
+
+    arr.map((num)=>(
+            num*2
+    ))
+
+    update arr=[2,4,6,8]
+
+
+## style in react
+
+    global style -- app.css and index.css is called as global style file  
+    Local style -- we need to create a seperate css  file for a component
+    module style -- to implement this module style , we need to create seperate css file 
+                    and we need to mention the file name as eg: [filename.module.css]
+    inline style -- we need to declear a style attribute in {{padding:"20px"}}
+    object style -- we need to declear  a styleing property in an obj formate as {key:value}
+                    and we need to call obj name in style attribute.

@@ -3,6 +3,8 @@ import Greeting from "./Greeting";
 import Hello from "./Hello";
 import DestructuringProps from "./DestructuringProps";
 import ConditionalRendering from "./Component/ConditionalRendering";
+import ListRender from "./Component/ListRender";
+import ObjectStyle from "./Component/ObjectStyle";
 
 export default function App() {
   const name = "kumar";
@@ -16,10 +18,13 @@ export default function App() {
   const name3 = "linin";
   const age3 = 8515;
   const city3 = "chennai";
+
+  const ternary = false;
   return (
     <>
-      <ConditionalRendering />
-      <h1>hello world!!!!--{name}</h1>
+    <ObjectStyle/>
+      {ternary ? <ListRender /> : <ConditionalRendering />}
+      <h1 style={{ padding: "20px", color: "red" }}>hello world!!!!--{name}</h1>
       <Greeting firstName={name} age={age} />
       <Hello />
       <DestructuringProps name={name} age={age} city={city} />

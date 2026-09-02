@@ -1,0 +1,16 @@
+.Greeting {
+  background-color: blue;
+  color: aliceblue;
+  padding: 20px;
+}
+.hello {
+  background-color: black;
+  color: aliceblue;
+  padding: 20px;
+}
+.destructure {
+  margin: 250px;
+}
+.condition {
+  margin: 200px;
+}

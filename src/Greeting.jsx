@@ -3,7 +3,7 @@ import Hello from "./Hello";
 
 export default function Greeting(props) {
   return (
-    <div>
+    <div className="Greeting">
       <h2>
         React intro--{props.firstName}---{props.age}
       </h2>

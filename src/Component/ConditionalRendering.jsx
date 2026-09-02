@@ -1,9 +1,10 @@
 import React from "react";
+import Style from "./Condition.module.css";
 
 export default function ConditionalRendering() {
   const user = true;
   return (
-    <div>
+    <div className={Style.condition}>
       <h2>Conditional rendering</h2>
       <h3>ternary</h3>
       {user ? <h4>welcom back....!</h4> : <h4>please login...</h4>}
