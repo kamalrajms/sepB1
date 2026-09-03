@@ -75,3 +75,29 @@
     inline style -- we need to declear a style attribute in {{padding:"20px"}}
     object style -- we need to declear  a styleing property in an obj formate as {key:value}
                     and we need to call obj name in style attribute.
+
+
+03/09/2026
+
+## useState()
+
+    useState is a react hook that allows you to add a state (data that can change over a time)
+    to a functional component.
+
+    Normally in js function , variables are disappear after the function run,
+    but in with useState , react remeber the value b/w renders.
+
+
+    syntax:
+
+        const num=55  --- js file
+
+        const[state,setState]=useState(initialValue)
+        const[count,setCount]=useState(7)
+
+
+        state --  the current  value of the state variables
+        setState -- a function that update the state
+        initialValue -- the starting value of the  state. 
+
+        
