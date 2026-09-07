@@ -8,6 +8,9 @@ import ObjectStyle from "./Component/ObjectStyle";
 import UseStateHook from "./Component/UseStateHook";
 import DarkMode from "./Component/DarkMode";
 import Field from "./Component/Field";
+import RegFrom from "./Component/RegFrom";
+import ConditionalFrom from "./Component/ConditionalFrom";
+import UseEffectHook from "./Component/UseEffectHook";
 
 export default function App() {
   const name = "kumar";
@@ -25,8 +28,11 @@ export default function App() {
   const ternary = false;
   return (
     <>
-    <Field/>
-    <DarkMode/>
+    <UseEffectHook/>
+      <ConditionalFrom />
+      <RegFrom />
+      <Field />
+      <DarkMode />
       <UseStateHook />
       <ObjectStyle />
       {ternary ? <ListRender /> : <ConditionalRendering />}
