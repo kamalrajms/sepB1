@@ -11,6 +11,10 @@ import Field from "./Component/Field";
 import RegFrom from "./Component/RegFrom";
 import ConditionalFrom from "./Component/ConditionalFrom";
 import UseEffectHook from "./Component/UseEffectHook";
+import Seconds from "./Component/Seconds";
+import StopWatch from "./Component/StopWatch";
+import UseEffectHookAPI from "./Component/UseEffectHookAPI";
+import UseRefHook from "./Component/UseRefHook";
 
 export default function App() {
   const name = "kumar";
@@ -28,7 +32,11 @@ export default function App() {
   const ternary = false;
   return (
     <>
-    <UseEffectHook/>
+      <UseRefHook />
+      <UseEffectHookAPI />
+      <StopWatch />
+      <Seconds />
+      <UseEffectHook />
       <ConditionalFrom />
       <RegFrom />
       <Field />

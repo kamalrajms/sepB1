@@ -100,7 +100,8 @@
         setState -- a function that update the state
         initialValue -- the starting value of the  state. 
 
-        
+
+08/09/2026
 
 ## useEffect
 
@@ -122,3 +123,21 @@
 
         [] ---> if you don't mension any dependency means 
                 it will execute only once at begining.
+
+
+## useRef()
+
+
+    useRef is a react hook that gives you a box (.current) you can store anything in
+    -like= num,str,obj,function,even DOm elements..
+
+    That value persists b/t rendering
+
+    Updating it dose not cause your component to re-render.
+
+    {current:value}
+    
+
+    syntax:
+
+        const variables=useRef(initialValue)
