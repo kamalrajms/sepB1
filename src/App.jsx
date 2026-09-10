@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, createContext, useState } from "react";
 import Greeting from "./Greeting";
 import Hello from "./Hello";
 import DestructuringProps from "./DestructuringProps";
@@ -15,6 +15,10 @@ import Seconds from "./Component/Seconds";
 import StopWatch from "./Component/StopWatch";
 import UseEffectHookAPI from "./Component/UseEffectHookAPI";
 import UseRefHook from "./Component/UseRefHook";
+import First from "./context/First";
+import Contxtform from "./context/Contxtform";
+
+export const Pass = createContext();
 
 export default function App() {
   const name = "kumar";
@@ -30,8 +34,22 @@ export default function App() {
   const city3 = "chennai";
 
   const ternary = false;
+
+  const [theme, setTheme] = useState("light");
+  const data = { name: "react jx context" };
   return (
     <>
+      <div style={{ padding: "20px", border: "2px solid #333" }}>
+        <Pass.Provider value={{ theme, setTheme, data }}>
+          <Contxtform />
+        </Pass.Provider>
+      </div>
+      <div style={{ padding: "20px", border: "2px solid #333" }}>
+        <h1>App component {name}</h1>
+        <Pass.Provider value={name}>
+          <First />
+        </Pass.Provider>
+      </div>
       <UseRefHook />
       <UseEffectHookAPI />
       <StopWatch />

@@ -141,3 +141,49 @@
     syntax:
 
         const variables=useRef(initialValue)
+
+
+10/9/2026
+
+## useContext()
+
+    Passing data from a parent component down to deeply nested child componentis annoying.
+    Normally, you'd have to pass props manually though each level called props drilling.
+    useContext lets you skip all the midddle component and share data directly.
+
+            create a context
+            Provide a value
+            Consume the value
+
+    createContext should be declear only once in a component.
+
+
+## Domain
+
+    a domain name is the human readable addressused to 
+    accesss a website on the internert.
+
+    it rep-IP address
+
+    eg:     example.com
+
+
+
+    Sub domain
+
+        mail.example.com
+        drive.example.com
+        career.example.com
+
+    Different types of domain
+
+    .com -- commercial
+    .org -- organization
+    .net -- network
+    .edu -- education
+    .gov -- government
+    .mil -- military
+    .info -- information
+    .biz -- business
+    .in -- india
+    
