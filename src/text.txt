@@ -187,3 +187,59 @@
     .biz -- business
     .in -- india
     
+11/09/2026
+
+## useReducer()
+
+    syntax 
+
+        const [state,dispatch]=useReducer(reducerFunction,initialState)
+
+        state -- current state Like useState
+        dispatch(action) -- a function to tell reducer what to do
+        reducerFunction(state,action) --- the logic that return a new state
+        initialState -- starting value
+
+
+## Routing DOM  && nested Routing
+
+    Routing means navigation b/w different pages in a web app without refreshing the browser.
+
+    In traditional websites , clicking a link reloads the  whole page.
+
+    In react (single pagge Application) , rounting lets us change the view without reloading.
+
+
+                better performance
+                Smooth user experiance
+                Control over the navigation without server request
+
+
+    commend:  npm install react-router-dom
+
+
+    basic structure:
+
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/address path"  element={<Component/>}/>
+                    <Route path="/home"  element={<home/>}/>
+                    <Route path="/about"  element={<about/>}/>
+                </Routes>
+            </BrowserRouter>
+
+    BrowserRouter:
+
+        It is  the main wrapper component for routing in react app
+        It enables navigation using the browser URL's.
+        without this , routing will not work.
+
+    Routes :
+
+        It contains all the <Route/> component
+        It tells react router which component to show for the  which path
+        Only one route will match and render at a time.
+
+    Route:
+     
+        Defines a specific URL PAth and which component should load for that path.
