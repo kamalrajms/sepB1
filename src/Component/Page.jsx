@@ -8,7 +8,7 @@ export default function Page() {
   // []
   // allItem=[,,,,,,,,]
   const allItem = Array.from({ length: 22 }, (_, ind) => ({ id: ind + 1 }));
-  // allItem=[{id:1},{id:2},,{id:3},,,,,,{id:20}]
+  // allItem=[{id:1},{id:2},{id:3},{id:4},{id:5},{id:6},,,,{id:20}]
 
   //clculation
 
@@ -16,6 +16,8 @@ export default function Page() {
   const startInd = (currentPage - 1) * itemPerpage; //0  5   10
   const endInd = startInd + itemPerpage; //5   10    15
   const currentItem = allItem.slice(startInd, endInd);
+  console.log(allItem[5]);
+
   //   const currentItem=[{1},{2},{3},{4},{5}]
   console.log(currentItem);
 
@@ -61,7 +63,9 @@ export default function Page() {
           {/* [1,2,3,4,5] */}
           {Array.from({ length: totalPage }, (_, ind) => ind + 1).map(
             (pageNum) => (
-              <button key={pageNum} onClick={()=>gotoPage(pageNum)}>{pageNum}</button>
+              <button key={pageNum} onClick={() => gotoPage(pageNum)}>
+                {pageNum}
+              </button>
             ),
           )}
         </div>
