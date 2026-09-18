@@ -287,3 +287,21 @@
     syntax :
      
       const navigate=useNavigate()
+
+
+18/09/2026
+
+## useSearchParam()
+
+    useSearchParam is a hook provided by react router uesed to read, access 
+    and update query parameter (search parameter) in the URL.
+
+    useSearchParam helps manage URL query parameter dynamically in react Application.
+
+    syntax:
+
+    const [searchParam,setSearchParam]=useSearchParam()
+
+
+    searchParam -- read value
+    setSearchParam -- update value
