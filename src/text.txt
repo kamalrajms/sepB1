@@ -305,3 +305,34 @@
 
     searchParam -- read value
     setSearchParam -- update value
+
+
+21/09/2026
+
+## API integration
+
+fetch & axios
+
+commend:npm i axios
+
+
+    response={
+        state-code:200,
+        state:ok,
+        header:{...},
+        data:[{id:1},{id:2},{id:3},{}]
+        err:{
+            message:"ejeidfewiu iweeuebd u "
+        }
+    }
+
+## custom hook
+
+    A custom hook is a reusable function in react that contains logic using hook(like useState,
+    useEffect,,,)
+
+    it allows you to share and reuse stateful logic b/w multiple component without repeating code.
+
+    The name of a component hook must start with [use] , such as  useFetch  , useLogic...
+
+    to creata a custom hook in js file.
