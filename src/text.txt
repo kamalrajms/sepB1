@@ -336,3 +336,84 @@ commend:npm i axios
     The name of a component hook must start with [use] , such as  useFetch  , useLogic...
 
     to creata a custom hook in js file.
+
+
+22/09/2026
+
+## CRUD operation
+                        req method
+    create data ----- Post
+    read data  ------ get
+    update Data ----- PUT
+    Delete data ----- Delete
+
+
+                        https request
+    Clint[React app]  -----------------> server
+                      <------------------
+                        https response {json}
+
+
+23/09/2026
+
+## Redux
+
+    props
+
+        we can pass the data from parent to child.
+
+    useContext
+
+        we can export the data any were.
+
+
+        component A [lap,price]
+
+
+        component B [lap]
+
+
+        component C [price]
+
+        component D
+
+    Redux
+
+
+        we can transfro data to the store.
+
+        component A [lap,price]
+
+
+        component B [car]                 redux store  [lap,price],[car]  
+
+
+        component C  lap
+
+        component D   car
+
+
+
+
+    Redux is a state management library that provid a  centeralized stroe for managing Application 
+    state and allows component to access and update share state ina predictable way.
+
+
+    Comment: npm install @reduxjs/toolKit react-redux
+
+    reduxjs/toolKit -- provide configurestroe,createslice
+
+    react-redux -- provid usedispatch,useSelector,provider
+
+
+
+    A redux store is a centeralized container that holds the component state of a readux Application
+    and provide a way to access and update that state.
+
+    simply:
+
+        store = centeal place where redux Application state is store.
+
+
+    A redux slice is a portin of the redux state that contains the initialState,reducer and
+    action related to a specific feature of the Application.
